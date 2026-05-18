@@ -1,0 +1,192 @@
+/* --- Estilos generales --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #161616;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-optical-sizing: auto;    
+}
+
+ul {
+    padding: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+/* --- Estilos Header (encabezado) --- */
+header {
+    display: flex;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px #0000001a;
+    background-color:  #000000;
+    align-items: center;
+}
+
+#icono-principal {
+    width: 55px;
+    height: 55px;
+    background-color:  #000000;
+}
+
+#titulo-principal {
+    color: white;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color:  #000000;
+}
+
+#listado-opciones {
+    display: flex;
+    align-items: center;
+    height: 55px;
+    padding-top: 15px;
+    background-color:  #000000;
+}
+
+a {
+    margin-left: 15px;
+    margin-right: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    background-color:  #000000;
+}
+
+a:hover {
+    color: gray;
+}
+ 
+/* --- Estilos Main (contenido) --- */
+.h2-separador {
+    background-color: black;
+    padding: 10px;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#listado-hamburguesas,
+#listado-bebidas,
+#listado-tragos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.li-hamburguesa,
+.li-bebida,
+.li-tragos {
+    background-color: #000000;
+    color: white;
+    width: 250px;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 16px;    
+}
+
+.li-hamburguesa,
+.li-bebida,
+.li-tragos, 
+.nombre-producto {
+    text-align: center;
+}
+
+.img-producto {
+    height: 180px;
+    width: 100%;
+}
+
+.nombre-producto {
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.precio-producto{
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #ca9013;
+}
+
+.descripcion-producto {
+    min-height: 110px;
+    max-height: 110px;
+    color: #808080;
+}
+
+.btn-sumar-a-carrito {
+    padding: 5px;
+    margin-top: 15px;
+    background-color: green;
+    border-radius: 8px;
+    border: none;
+    width: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-restar-a-carrito {
+    padding: 5px;
+    margin-top: 15px;
+    background-color: red;
+    border-radius: 8px;
+    border: none;
+    width: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #000000;
+    text-align: center;
+    padding: 10px;
+    font-size: 13px;
+}
+
+
+/* --- Extras --- */
+#snackbar {
+    visibility: hidden;
+    min-width: 300px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1000;
+    top: 50px;
+    right: 30px;
+    transform: translateX(100px);
+    opacity: 0;
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+}
+
+#snackbar.mostrar {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#numero-articulos{
+    background-color: black;
+    color: red;
+    border: solid 2px red;
+    border-radius: 16px;
+    padding: 5px 5px;
+}

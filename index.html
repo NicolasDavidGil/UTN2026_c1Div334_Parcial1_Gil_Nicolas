@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burger Palace | Menú</title>
+
+    <!-- Importacion de GoogleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap"
+        rel="stylesheet">
+
+    <!-- Seteo de icono -->
+    <link rel="icon" href="./assets/icono.png">
+
+    <!-- Importacion de archivo CSS (Estilos) -->
+    <link rel="stylesheet" href="./index.css">
+
+    <!-- Importacion de archivo JS (Comportamiento) -->
+    <script src="./index.js"></script>
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+    <header id="header">
+        <img id="icono-principal" src="./assets/icono.png" alt="Logo Hamburguesería" />
+        <h1 id="titulo-principal">Burger Palace</h1>
+        <nav id="listado-opciones">
+            <a href="">Inicio</a>
+            <a href="#hamburguesas">Hamburguesas</a>
+            <a href="#bebidas">Bebidas</a>
+            <a href="#tragos">Tragos</a>
+            <a href="./carrito/carrito.html">Mi carrito</a>
+            <span id="numero-articulos">0</span>
+        </nav>
+        <div id="snackbar"></div>
+    </header>
+
+    <!-- Contenido principal de la pagina -->
+    <main>
+        <!-- Seccion de Hamburguesas -->
+        <section id="hamburguesas">
+            <h2 class="h2-separador" href="header">Hamburguesas 🍔</h2>
+            <ul id="listado-hamburguesas">
+                <li class="li-hamburguesa">
+                    <img class="img-producto" src="./assets/hamburguesas/burga-1.jpg" alt="hamburguesa-1">
+                    <div>
+                        <h3 class="nombre-producto">Armonía</h3>
+                        <p class="precio-producto">$12000</p>
+                        <p class="descripcion-producto">Doble medallón de carne, queso cheddar, queso roquefort,
+                            huevo frito y pan con queso gratinado.</p>
+                    </div>
+                    <button class="btn-sumar-a-carrito"> + </button>
+                    <button class="btn-restar-a-carrito"> - </button>
+                </li>
+                <li class="li-hamburguesa">
+                    <img class="img-producto" src="./assets/hamburguesas/burga-3.jpg" alt="hamburguesa-3">
+                    <div>
+                        <h3 class="nombre-producto">Clásica Law</h3>
+                        <p class="precio-producto">$9000</p>
+                        <p class="descripcion-producto">Medallón de carne, queso cheddar, panceta, cebolla crispy,
+                            salsa barbacoa, tomate, lechuga y pan con semillas de sésamo.</p>
+                    </div>
+                    <button class="btn-sumar-a-carrito"> + </button>
+                    <button class="btn-restar-a-carrito"> - </button>
+                </li>
+                <li class="li-hamburguesa">
+                    <img class="img-producto" src="./assets/hamburguesas/burga-4.jpg" alt="hamburguesa-4">
+                    <div>
+                        <h3 class="nombre-producto">Exotically</h3>
+                        <p class="precio-producto">$16500</p>
+                        <p class="descripcion-producto">Medallón de carne, doble queso roquefort, rúcula, cebolla
+                            caramelizada, tomate, hongo portobello salteado y pan brioche con semillas.</p>
+                    </div>
+                    <button class="btn-sumar-a-carrito"> + </button>
+                    <button class="btn-restar-a-carrito"> - </button>
+                </li>
+                <li class="li-hamburguesa">
+                    <img class="img-producto" src="./assets/hamburguesas/burga-5.jpg" alt="hamburguesa-5">
+                    <div>
+                        <h3 class="nombre-producto">La Bestia</h3>
+                        <p class="precio-producto">$19000</p>
+                        <p class="descripcion-producto">Quíntuple medallón de carne, 5 capas de cheddar, panceta en
+                            cada piso, cheddar en cada piso, queso especial derretido y pan con queso gratinado.</p>
+                    </div>
+                    <button class="btn-sumar-a-carrito"> + </button>
+                    <button class="btn-restar-a-carrito"> - </button>
+                </li>
+                <li class="li-hamburguesa">
+                    <img class="img-producto" src="./assets/hamburguesas/burga-6.jpg" alt="hamburguesa-6">
+                    <div>
+                        <h3 class="nombre-producto">Nuggy Chop</h3>
+                        <p class="precio-producto">$14500</p>
+                        <p class="descripcion-producto">Doble medallón de carne, doble queso cheddar, doble panceta,
+                            cebolla caramelizada, Nuggets de muzzarella y pan con queso gratinado.</p>
+                    </div>
+                    <button class="btn-sumar-a-carrito"> + </button>
+                    <button class="btn-restar-a-carrito"> - </button>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Seccion de Bebidas -->
+        <section id="bebidas">
+            <a href=""><h2 class="h2-separador">Bebidas 🍺</h2></a>
+            <ul id="listado-bebidas">
+                <li class="li-bebida">
+                    <img class="img-producto" src="./assets/bebidas/agua-sin-gas.png" alt="agua-sin-gas">
+                    <div>
+                        <h3 class="nombre-producto">Agua sin gas (1L)</h3>
+                        <p class="precio-producto">$2000</p>
+                        <p class="descripcion-producto">Botella 1 litro agua Villavicencio sin gas.</p>
+                    </div>
+                    <button class="btn-sumar-a-carrito"> + </button>
+                    <button class="btn-restar-a-carrito"> - </button>
+                </li>
+                <li class="li-bebida">
+                    <img class="img-producto" src="./assets/bebidas/agua-con-gas.png" alt="agua-con-gas">
+                    <div>
+                        <h3 class="nombre-producto">Agua con gas (1L)</h3>
+                        <p class="precio-producto">$1500</p>
+                        <p class="descripcion-producto">Botella 1 litro agua Saldan con gas.</p>
+                    </div>
+                    <button class="btn-sumar-a-carrito"> + </button>
+                    <button class="btn-restar-a-carrito"> - </button>
+                </li>
+                <li class="li-bebida">
+                    <img class="img-producto" src="./assets/bebidas/aquarius-manzana.png" alt="agua-saborizada-manzana">
+                    <div>
+                        <h3 class="nombre-producto">Aquarius Manzana (3L)</h3>
+                        <p class="precio-producto">$5500</p>
+                        <p class="descripcion-producto">Botella 3 litros agua saborizada Aquarius de manzana.</p>
+                    </div>
+                    <button class="btn-sumar-a-carrito"> + </button>
+                    <button class="btn-restar-a-carrito"> - </button>
+                </li>
+                <li class="li-bebida">
+                    <img class="img-producto" src="./assets/bebidas/aquarius-pomelo.png" alt="agua-saborizada-pomelo">
+                    <div>
+                        <h3 class="nombre-producto">Aquarius Pomelo (3L)</h3>
+                        <p class="precio-producto">$5500</p>
+                        <p class="descripcion-producto">Botella 3 litros agua saborizada Aquarius de pomelo.</p>
+                    </div>
+                    <button class="btn-sumar-a-carrito"> + </button>
+                    <button class="btn-restar-a-carrito"> - </button>
+                </li>
+                <li class="li-bebida">
+                    <img class="img-producto" src="./assets/bebidas/aquarius-naranja.png" alt="agua-saborizada-naranja">
+                    <div>
+                        <h3 class="nombre-producto">Aquarius Naranja (3L)</h3>
+                        <p class="precio-producto">$5500</p>
+                        <p class="descripcion-producto">Botella 3 litros agua saborizada Aquarius de naranja.</p>
+                    </div>
+                    <button class="btn-sumar-a-carrito"> + </button>
+                    <button class="btn-restar-a-carrito"> - </button>
+                </li>
+                <li class="li-bebida">
+                    <img class="img-producto" src="./assets/bebidas/coca-cola.png" alt="coca-cola">
+                    <div>
+                        <h3 class="nombre-producto">Coca-Cola (1.5L)</h3>
+                        <p class="precio-producto">$4500</p>
+                        <p class="descripcion-producto">Botella 1.5 litros de Coca-Cola.</p>
+                    </div>
+                    <button class="btn-sumar-a-carrito"> + </button>
+                    <button class="btn-restar-a-carrito"> - </button>
+                </li>
+                <li class="li-bebida">
+                    <img class="img-producto" src="./assets/bebidas/sprite.png" alt="sprite">
+                    <div>
+                        <h3 class="nombre-producto">Sprite (1.5L)</h3>
+                        <p class="precio-producto">$4500</p>
+                        <p class="descripcion-producto">Botella 1.5 litros de Sprite.</p>
+                    </div>
+                    <button class="btn-sumar-a-carrito"> + </button>
+                    <button class="btn-restar-a-carrito"> - </button>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Seccion de Tragos -->
+        <section id="tragos">
+            <a href=""><h2 class="h2-separador">Tragos 🍸</h2></a>
+            <ul id="listado-tragos">
+                <li class="li-tragos">
+                    <img class="img-producto" src="./assets/campari.png" alt="campari">
+                    <div>
+                        <h3 class="nombre-producto">Campari</h3>
+                        <p class="precio-producto">$6000</p>
+                        <p class="descripcion-producto">Vaso de Campari y jugo de naranja.</p>
+                    </div>
+                    <button class="btn-sumar-a-carrito"> + </button>
+                    <button class="btn-restar-a-carrito"> - </button>
+                </li>
+                <li class="li-tragos">
+                    <img class="img-producto" src="./assets/fernet.png" alt="fernet">
+                    <div>
+                        <h3 class="nombre-producto">Fernet</h3>
+                        <p class="precio-producto">$7000</p>
+                        <p class="descripcion-producto">Vaso de Coca-Cola y Fernet.</p>
+                    </div>
+                    <button class="btn-sumar-a-carrito"> + </button>
+                    <button class="btn-restar-a-carrito"> - </button>
+                </li>
+                <li class="li-tragos">
+                    <img class="img-producto" src="./assets/gancia.png" alt="gancia">
+                    <div>
+                        <h3 class="nombre-producto">Gancia</h3>
+                        <p class="precio-producto">$6000</p>
+                        <p class="descripcion-producto">Vaso de Gancia y Sprite.</p>
+                    </div>
+                    <button class="btn-sumar-a-carrito"> + </button>
+                    <button class="btn-restar-a-carrito"> - </button>
+                </li>
+                <li class="li-tragos">
+                    <img class="img-producto" src="./assets/ron.png" alt="ron">
+                    <div>
+                        <h3 class="nombre-producto">Ron Havana Club</h3>
+                        <p class="precio-producto">$9000</p>
+                        <p class="descripcion-producto">Vaso de Ron y Coca-Cola.</p>
+                    </div>
+                    <button class="btn-sumar-a-carrito"> + </button>
+                    <button class="btn-restar-a-carrito"> - </button>
+                </li>
+                <li class="li-tragos">
+                    <img class="img-producto" src="./assets/daiquiri.png" alt="daiquiri">
+                    <div>
+                        <h3 class="nombre-producto">Daiquiri</h3>
+                        <p class="precio-producto">$7000</p>
+                        <p class="descripcion-producto">Vaso de Daiquiri.</p>
+                    </div>
+                    <button class="btn-sumar-a-carrito"> + </button>
+                    <button class="btn-restar-a-carrito"> - </button>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Todos los derechos reservados | Burger Palace 2025</p>
+    </footer>
+
+</body>
+
+</html>
