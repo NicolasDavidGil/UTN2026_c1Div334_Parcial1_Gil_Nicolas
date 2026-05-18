@@ -1,5 +1,11 @@
 let listaCarrito = [];
 
+function inicializar()
+{
+    listaCarrito = obtenerCarrito();
+    document.getElementById("numero-articulos").textContent = listaCarrito.reduce((total, item) => total + item.cantidad, 0);
+}
+
 //--- Funcion que obtiene el carrito del LocalStorage, lo parsea a un array y lo retorna ---//
 function obtenerCarrito() 
 {
